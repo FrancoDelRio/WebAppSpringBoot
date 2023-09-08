@@ -10,6 +10,19 @@ public class FunRestControler {
 
     @GetMapping("/")
     public String sayHelloWorld(){
-        return "HELLO WORLD";
+        return "SISISI";
+    }
+
+
+    // new endpoint "otracosa"
+    @GetMapping("/otracosa")
+    public String otracosa(){
+        return "run very fast";
+    }
+
+    // new endpoint "fortune"
+    @GetMapping("/fortune")
+    public String getDailyFortune(){
+        return "Today you're lucky";
     }
 }
